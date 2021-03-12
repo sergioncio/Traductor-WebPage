@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>APT-CONTACTO</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <header class=" contenedor site-header inicio">
+        <div class="barra">
+            <a href="index.html">
+                <img src="img/logo.png" alt="Andr&eacute;s Paredes Traducciones">
+            </a>
+            <nav class="enlaces">
+                <a href="index.html">INICIO</a>
+                <a href="#contacto">CONTACTO</a>
+            </nav>
+        </div>
+    </header>
+    <main class="contenedor mensaje-form" name="contacto">
+        <section>
+            <h3>
+                Escr&iacute;benos con lo que deseas saber
+            </h3>
+            <p>
+                Contestaremos lo antes posible, gracias por confiar en nosotros
+            </p>
+        </section>
+    </main>
+    <section class="contenedor seccion formContacto">
+        <form action="enviar2.php" method="POST" name="formContacto">
+        <fieldset>
+            <legend>Informaci&oacute;n Personal</legend>
+            <label for="nombre">Nombre y apellidos:</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellidos" required>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Su correo electr&oacute;nico" required>
+        </fieldset>
+        <fieldset>
+            <legend>Consulta</legend>
+            <label for="tipoconsulta">Tipo de Consulta:</label>
+            <select name="tipoconsulta" id="tipoconsulta" class="default">
+                <option value="Ninguna" disabled selected>-- Seleccione --</option>
+                <option value="Traducci&oacute;n">Traducci&oacute;n</option>
+                <option value="Revisi&oacute;n">Revisi&oacute;n</option>
+                <option value="Informaci&oacute;n">Informaci&oacute;n</option>
+            </select>
+            <label for="mensaje">Deje aqu&iacute; su mensaje:</label>
+            <textarea name="mensaje" id="mensaje" class="default" placeholder="Escriba el mensaje..."
+                required></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Enviar</legend>
+            <input type="submit" value="ENVIAR" class="boton enviar">
+        </fieldset>
+        </form>
+    </section>
+    <footer class="contenedor footer">
+        <h5> &copy; Andrés Paredes Traducciones - 2019</h5>
+    </footer>
+
+
+</body>
+
+</html>

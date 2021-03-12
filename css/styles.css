@@ -1,0 +1,392 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;/*Reset para rem*/
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+}
+
+/*Css globales*/
+img{
+    max-width: 100%;
+}
+.contenedor{
+    width: 95%;
+    margin: 0 auto;
+    line-height: 3rem;
+}
+h1{
+    font-size: 4.8rem;
+}
+h2{
+    font-size: 3.4rem;
+}
+h3{
+    font-size: 3rem;
+}
+h5{
+    font-size: 1rem;
+}
+/*botones*/
+.boton{
+    display: block;
+    flex: 0 0 100%;
+    text-align: center;
+    border: none;
+}
+@media(min-width: 768px){
+    .boton{
+        display: inline-block;
+        flex: 0 0 auto;
+    }
+}
+
+
+.boton-azul{
+    background-color: lightseagreen;
+    border-radius: 3rem;
+    border: 5px solid white;
+    width: 80%;
+    margin-bottom: 3rem;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 5rem;
+    padding: 5rem 1.5rem;
+    color: white;
+}
+@media(min-width: 768px){
+    .boton-azul{
+        display: inline-block;
+        flex: 0 0 auto;
+        width: 36rem;
+        font-size: 6rem;
+    }
+}
+
+.boton-azul:hover{
+    background-color: white;
+    color: lightseagreen;
+    cursor: pointer;
+}
+
+.boton-enviado{
+    background-color: lightseagreen;
+    border-radius: 3rem;
+    border: 5px solid black;
+    margin-bottom: 3rem;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 4rem;
+    padding: 5rem 2rem;
+    color: black;
+    width: 90%;
+}
+@media(min-width: 768px){
+    .boton-enviado{
+        display: inline-block;
+        flex: 0 0 auto;
+        width: 75%;
+        font-size: 5rem;
+    }
+}
+.boton-enviado:hover{
+    background-color: black;
+    color: lightseagreen;
+    cursor: pointer;
+}
+
+.boton-fallido{
+    background-color: lightseagreen;
+    border-radius: 3rem;
+    border: 5px solid black;
+    width: 90%;
+    margin-bottom: 3rem;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 4rem;
+    padding: 5rem 13rem;
+    color: black;
+}
+@media(min-width: 768px){
+    .boton-fallido{
+        display: inline-block;
+        flex: 0 0 auto;
+        width: 75%;
+        font-size: 5rem;
+    }
+}
+.botonfallido:hover{
+    background-color: black;
+    color: lightseagreen;
+    cursor: pointer;
+}
+
+/*utilidades*/
+.seccion{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.fw-300{
+    font-weight: 300;
+}
+.centrar-texto{
+    text-align: center;
+}
+
+/*header*/
+.site-header.inicio{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align:center;
+    background-color: lightseagreen;
+    min-height: 7rem;
+    width: auto;
+}
+@media (min-width: 768px){
+    .site-header.inicio{
+        text-align: left;
+    }
+}
+/*barra inicio*/
+.barra{
+    padding-top: 2rem;
+}
+
+@media (min-width: 768px){
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+/*enlaces de arriba*/
+.enlaces a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.8rem;
+    margin-right: 2rem;
+    display: block;
+}
+@media (min-width: 768px){
+    .enlaces a{
+        display: inline-block;
+        font-size: 1.8rem;
+        margin-right: 2rem;
+    }
+    .enlaces a:last-of-type{
+        margin: 0.5rem;
+    }
+}
+/*hover es cuando tienes el ratón encima del enlace*/
+.enlaces a:hover{
+    color: black;
+    cursor: pointer;
+}
+/*Ahora la portada de la web*/
+.portada{
+    background-image: url(../img/portada.jpg);
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    min-height: 62rem;
+    width: auto;
+    justify-content: center;
+    align-items: flex-end;
+    color: rgb(252, 252, 252);
+    text-align: center;
+    line-height: 6rem;
+}
+@media(min-width:768px){
+    .portada{
+    justify-content: center;
+    align-items: flex-end;
+    }
+}
+
+/*parte cualidades*/
+@media (min-width: 768px){
+    .cualidades{
+        display:flex;
+        justify-content: space-between;
+    }
+}
+.cualidad-sola{
+    text-align: center;
+}
+@media (min-width: 768px){
+    .cualidad-sola{
+        flex-basis: calc(50% - 2rem);
+    }
+}
+
+.cualidad-sola h2{
+    text-transform: uppercase;
+}
+
+/*ahora editamos el banner*/
+.banner{
+    display: flex;
+    flex: 0 0 95%;
+    min-width: 100%;
+    background: lightseagreen;
+    justify-content: center;
+    color: white;
+    text-transform: uppercase;
+    min-height: 7rem;
+}
+@media (min-width: 768px){
+    .banner{
+        justify-content: flex-end;
+        padding-right: 3rem;
+    }
+}
+.banner h2{
+    inline-size: 35rem;
+    text-align: right;
+}
+/*parte sobre mi*/
+.sobremi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center; 
+    min-height: 60rem;
+}
+.fotoredonda{
+    border-radius: 50%;
+}
+@media (min-width: 768px){
+    .fotoredonda{
+        display: flex;
+        width: 20rem;
+    }
+}
+/*boton de contacto*/
+.boton-contactar{
+    width: 100%;
+    background: lightseagreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: white;
+    min-height: 20rem;
+    margin-bottom: 0;
+}
+
+/*ahora el footer*/
+.footer{
+    width: 100%;
+    background: grey;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin:0;
+    max-height: 3rem;
+}
+
+.copyright{
+    margin-bottom: 0;
+}
+
+/*pagina de contacto*/
+/*Mensaje de encima del formulario*/
+.mensaje-form{
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color:lightseagreen;
+    color: white;
+}
+
+legend{
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    color: #4f4f4f; 
+}
+
+label{
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+}
+input:not([type="submit"]),
+textarea {
+    padding: .5rem;
+    display: block;
+    width: 100%;
+    background-color: #e1e1e1;
+    padding-bottom: 2rem;
+    border: none;
+    border-radius: 1rem;
+}
+select{
+    -webkit-appearance: none;
+    appearance: none;
+    padding: .25rem;
+    display: block;
+    width: 100%;
+    background-color: #e1e1e1;
+    padding-bottom: 2rem;
+    border: none;
+    border-radius: 1rem;
+    align-items: center;
+}
+textarea{
+    height: 20rem;
+}
+.formContacto{ 
+    display: block;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+@media(min-width: 768px){
+    .formContacto{
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}
+.enviar{
+    display: block;
+    height:4rem;
+    width:100%;
+    background-color: #e1e1e1;
+    border-radius: 1rem;
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.enviar:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+/*mensaje enviado*/
+.mensajeenviado{
+    display: flex;
+    flex-direction: column;
+    min-height: 58rem;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    line-height: 5rem;
+}
+.mensajeenviado h1{
+    font-size:4rem;
+}
+@media(min-width: 768px){
+    .mensajeenviado h1{
+        font-size:4.8rem;  
+    }
+}
